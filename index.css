@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    background-color: skyblue;
+    color: white;
+    font-size: 2.5rem;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+.sub-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 20px;
+}
+
+.left {
+    background-color: rgb(245, 245, 245);
+    border-right: 1px solid transparent;
+}
+
+.question-form {
+    display: flex;
+    height: max-content;
+    padding: 20px;
+    background-color: white;
+    justify-content: space-around;
+}
+
+#QuestionFormBtn {
+    text-decoration: none;
+    padding: 10px;
+    overflow: hidden;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#SearchQuestionBar {
+    font-size: 20px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+#QuestionFormBtn:hover,
+#SearchQuestionBar:hover {
+    scale: 110%;
+}
+
+#QuestionFormBtn:active,
+#SearchQuestionBtn:active {
+    color: skyblue;
+    background-color: white;
+}
+
+.question-list {
+    min-height: 75vh;
+    max-height: max-content;
+}
+
+.right {
+    position: relative;
+    margin: 25px 0 0 50px;
+}
+
+#subjectBox {
+    height: 30px;
+    font-size: 20px;
+    width: max-content;
+    outline-color: rgb(109, 108, 108);
+    color: rgb(58, 57, 57);
+    padding-left: 8px;
+}
+
+#questionBox {
+    margin-top: 20px;
+    max-width: 100%;
+    font-size: 20px;
+    outline-color: rgb(77, 75, 75);
+    padding: 8px;
+}
+
+#button {
+    padding: 7px;
+    margin-top: 8px;
+    font-size: 20px;
+    position: absolute;
+    max-width: 100%;
+    right: 5%;
+    background-color: blue;
+    color: white;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#button:hover {
+    scale: 110%;
+}
+
+#button:active {
+    color: skyblue;
+    background-color: white;
+}
